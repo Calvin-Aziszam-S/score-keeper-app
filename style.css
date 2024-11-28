@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#container {
+	width: 30rem;
+	border-radius: 1.2rem;
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+		rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.header {
+	border-bottom: 1px rgb(224, 224, 224) solid;
+}
+
+img {
+	width: auto;
+	border-radius: 1.2rem 1.2rem 0 0;
+}
+
+h3 {
+	padding: 1rem;
+}
+
+.score-board {
+	padding: 1rem;
+}
+
+.score-board span {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.instruction {
+	color: gray;
+	padding-bottom: 1rem;
+}
+
+.score-board label {
+	font-size: 1rem;
+	font-weight: 600;
+	padding-right: 0.5rem;
+}
+
+select {
+	border-radius: 0.7rem;
+	padding: 0.1rem 0.5rem;
+	transition: all 0.3s ease;
+	/* border: 2px solid #4894ec; */
+	cursor: pointer;
+	outline: none;
+}
+
+.buttons {
+	padding-top: 1.5rem;
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+button {
+	width: 100%;
+	border: none;
+	border-radius: 1.2rem;
+	padding: 1rem;
+	color: white;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.playerone-btn {
+	background-color: #4894ec;
+	transition: all 0.3s ease;
+}
+.playerone-btn:hover {
+	background-color: #3476c4;
+}
+.playerone-btn:active {
+	transform: scale(0.95);
+}
+.playerone-btn.clicked {
+	background-color: #2861a8;
+}
+
+.playertwo-btn {
+	background-color: #4fbd98;
+	transition: all 0.3s ease;
+}
+.playertwo-btn:hover {
+	background-color: #3f9879;
+}
+.playertwo-btn:active {
+	transform: scale(0.95);
+}
+.playertwo-btn.clicked {
+	background-color: #327c61;
+}
+
+.reset-btn {
+	background-color: #dc4d4d;
+	transition: all 0.3s ease;
+}
+.reset-btn:hover {
+	background-color: #c13e3e;
+}
+.reset-btn:active {
+	transform: scale(0.95);
+}
+.reset-btn.clicked {
+	background-color: #a63434;
+}
+
+select:hover {
+	border-color: #3476c4;
+}
+
+select:focus {
+	border-color: #2861a8;
+	box-shadow: 0 0 0 3px rgba(72, 148, 236, 0.2);
+}
+
+select.no-focus {
+	box-shadow: none;
+}
+
+/* Style for options */
+select option {
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+/* For disabled state */
+.disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.win {
+	color: #4fbd98;
+}
+
+.lose {
+	color: #dc4d4d;
+}
